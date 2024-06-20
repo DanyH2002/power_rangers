@@ -1,0 +1,44 @@
+.body{
+  background: #191919;
+}
+
+.slash{
+  margin-top: 10%;
+  height: 350px;
+  width: 100%;
+}
+
+.title{
+  color: #ffffff;
+  font-size: 90px;
+  text-align: center;
+  margin-top: 10%;
+  font-family: "Fjalla One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-shadow: 0 0 20px #9ff2f8;
+}
+
+.descrip{
+  color: #ffffff;
+  font-size: 40px;
+  text-align: center;
+  margin-top: 5%;
+  font-family: "Martian Mono", monospace;;
+  font-weight: 450;
+  font-style: oblique;
+  font-optical-sizing: auto;
+  text-shadow: 0 0 30px #96fddb;
+}
+
+.text{
+  color: #ffffff;
+  font-size: 50px;
+  text-align: center;
+  margin-top: 5%;
+  font-weight: 250;
+  font-style: normal;
+  font-family: "Teko", sans-serif;
+  letter-spacing: 2px;
+  line-height: 1;
+}

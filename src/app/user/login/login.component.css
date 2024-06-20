@@ -1,0 +1,68 @@
+.body{
+  background-color: #00000096;
+  margin-top: 3.5%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centrar elementos horizontalmente */
+  justify-content: center; /* Centrar elementos verticalmente */
+  height: 100vh; /* 100% del viewport height */
+  padding: 20px; /* Espaciado interior */
+}
+
+h1 {
+  color: #ffffff;
+  font-size: 90px;
+  text-align: center;
+  margin: 5%;
+  padding: auto;
+  font-family: "Fjalla One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+input {
+  width: 150px;
+}
+
+.input-with-image {
+  display: flex;
+  align-items: center; /* Centra verticalmente */
+}
+
+.input-field {
+  flex: 1; /* El campo de entrada ocupa todo el espacio restante */
+  margin-right: 10px; /* Espacio entre el campo de entrada y la imagen */
+}
+
+.input-image {
+  max-height: 50px; /* Altura máxima de la imagen */
+}
+
+img{
+  width: 40px;
+  height: 40px;
+}
+
+button {
+  margin-top: 20px;
+  height: 30px;
+  width: 200px;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(157, 137, 255);
+  color: black;
+  font-family: "Francois One", sans-serif;
+  font-weight: 450;
+  font-style: normal;
+  font-size: 25px;
+  border-radius: 10%;
+}
+
+button:hover {
+  background-color: rgb(31, 42, 201);
+  cursor: pointer;
+  color: azure;
+}

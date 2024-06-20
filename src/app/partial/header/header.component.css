@@ -1,0 +1,67 @@
+#buttons {
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo{
+  height: 70px;
+  width: 215px;
+}
+
+#action {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.button-purple,
+.button-blue,
+.button-green {
+  margin: 0 130px; /* Ajusta el espacio entre los botones */
+  font-family: "Francois One", sans-serif;
+  font-weight: 450;
+  font-style: normal;
+  font-size: 18px;
+}
+
+.button-purple {
+  background-color: #45116a;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: white;
+}
+
+.button-blue,
+.menu-pelicula {
+  background-color: #123071;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: white;
+}
+
+.button-green,
+.menu-serie {
+  background-color: #0c4a30;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: white;
+}
+
+.button-blue,
+.menu-pelicula:hover{
+  background-color: rgb(31, 42, 201);
+  cursor: pointer;
+}
+
+.button-green,
+.menu-serie :hover {
+  background-color: #087146;
+  cursor: pointer;
+}
+
+.button-pueple:hover {
+  background-color: #522588;
+  cursor: pointer;
+}

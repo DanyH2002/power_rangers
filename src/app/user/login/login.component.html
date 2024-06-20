@@ -1,0 +1,36 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+  href="https://fonts.googleapis.com/css2?family=Francois+One&family=Martian+Mono:wdth,wght@75..112.5,100..800&display=swap"
+  rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+
+<app-header scroll="{{this.scrollPosition}}"></app-header>
+<div class="h-screen flex flex-col body">
+  <h1> BIENVENIDO </h1>
+  <form (ngSubmit)="onSubmit(loginForm)" #loginForm="ngForm">
+
+    <div class="input-with-image">
+      <mat-form-field appearance="fill">
+        <mat-label>Correo</mat-label>
+        <input matInput type="email" placeholder="Correo" name="correo" ngModel required>
+      </mat-form-field>
+      <img src="https://i.pinimg.com/564x/b0/2e/b4/b02eb40f533cb7ed4222efe9c179f187.jpg" alt="Imagen para correo">
+    </div>
+
+    <div class="input-with-image">
+      <mat-form-field appearance="fill">
+        <mat-label>Contraseña</mat-label>
+        <input matInput type="password" placeholder="Contraseña" name="contrasena" ngModel required>
+      </mat-form-field>
+      <img src="https://i.pinimg.com/564x/8f/fe/67/8ffe67a37e08d15ef2e53687e72071fc.jpg" alt="Imagen para contraseña">
+    </div>
+
+    <button mat-stroked-button type="submit">LOGIN</button>
+
+  </form>
+  <button mat-stroked-button (click)=" registro()">REGISTER</button>
+   <!-- <button mat-stroked-button id="cerrarSesion" (click)="cerrarSesion()">LOGOUT</button> -->
+</div>

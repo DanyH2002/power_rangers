@@ -1,0 +1,52 @@
+<header class="fixed top-0 left-0 w-full px-20 z-50 transition !duration-200 ease-in-out bg-black">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Francois+One&display=swap" rel="stylesheet">
+
+  <div id="buttons" class="flex justify-between items-center">
+    <!-- Logotipo principal -->
+    <a href='landing'>
+      <img src="https://i.pinimg.com/564x/c6/9c/5c/c69c5cbdf61c7c463dd9ada8531e9db8.jpg" alt="Logo" class="logo">
+    </a>
+    <div id="action" class="flex justify-center">
+      <!-- Botón de Login  -->
+      <a href='login'>
+        <button mat-button class="button-purple">Login</button>
+      </a>
+      <!-- Botón de Películas -->
+      <button mat-button [matMenuTriggerFor]="movieMenu" class="button-blue">Película</button>
+
+      <!-- Botón de Series -->
+      <button mat-button [matMenuTriggerFor]="serieMenu" class="button-green">Serie</button>
+
+    </div>
+    <!-- Botón de Inicio (Logotipo) -->
+    <a href='landing'>
+      <button mat-icon-button color="primary" aria-label="Icon button with a home icon">
+        <mat-icon>home</mat-icon>
+      </button>
+    </a>
+  </div>
+
+  <mat-menu #movieMenu="matMenu" class="menuA">
+    <a href='Peliculas'> <button mat-menu-item class="menu-pelicula">Peliculas</button> </a>
+    <a href='PersonajesDePelicula'> <button mat-menu-item class="menu-pelicula">Personajes</button> </a>
+    <a href='VillanosDePelicula'> <button mat-menu-item class="menu-pelicula">Villanos</button> </a>
+  </mat-menu>
+
+  <mat-menu #serieMenu>
+    <a href='Temporadas'> <button mat-menu-item class="menu-serie">Temporada</button> </a>
+    <a href='Equipos'> <button mat-menu-item class="menu-serie">Equipos</button> </a>
+    <a href='Rangers'> <button mat-menu-item class="menu-serie">Rangers</button> </a>
+    <a href='Villanos'> <button mat-menu-item class="menu-serie">Villanos</button> </a>
+    <a href='Mentores'> <button mat-menu-item class="menu-serie">Mentores</button> </a>
+    <a href='ArmaRanger'> <button mat-menu-item class="menu-serie">Armas</button> </a>
+    <a href='Zord&Megazord'> <button mat-menu-item class="menu-serie">Zords</button> </a>
+    <a href='Transporte'> <button mat-menu-item class="menu-serie">Transporte</button> </a>
+    <a href='Morfer'> <button mat-menu-item class="menu-serie">Morfers</button> </a>
+    <a href='Crossovers'> <button mat-menu-item class="menu-serie">Crossovers</button> </a>
+    <a href='Aliados&PersonajesSecundarios'> <button mat-menu-item class="menu-serie">Personajes Secundarios</button> </a>
+    <a href='Mounstros'> <button mat-menu-item class="menu-serie">Mounstros</button> </a>
+  </mat-menu>
+
+</header>
